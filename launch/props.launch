@@ -1,0 +1,19 @@
+<launch>
+
+  <!-- 
+  <group ns="turtlesim1">
+    <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+  </group>
+
+  <group ns="turtlesim2">
+    <node pkg="turtlesim" name="sim" type="turtlesim_node"/>
+  </group> -->
+
+  <node pkg="thruster_ros" name="teleop_node" type="teleop_node.py">
+  </node>
+
+  <param name="right_pin" type="int" value="12" />
+  <param name="left_pin" type="int" value="13" />
+
+
+</launch>
